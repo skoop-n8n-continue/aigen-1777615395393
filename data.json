@@ -1,0 +1,915 @@
+{
+  "app_id": "realeaf-001",
+  "document_version": 1,
+  "sections": {
+    "storefront": {
+      "store_name": {
+        "type": "text",
+        "label": "Store Name",
+        "value": "Realeaf Botanicals"
+      },
+      "company_logo": {
+        "type": "file",
+        "label": "Company Logo",
+        "value": "assets/company_logo_9mg2wb.png",
+        "meta": {
+          "accepted_formats": [
+            "png",
+            "jpg",
+            "svg"
+          ],
+          "path": "assets/"
+        }
+      },
+      "hero_headline": {
+        "type": "text",
+        "label": "Welcome Headline",
+        "value": "Our Brands"
+      },
+      "hero_subtext": {
+        "type": "textarea",
+        "label": "Welcome Subtext",
+        "value": "Masterfully crafted cannabis products created to elevate your experience and exhilarate your life."
+      },
+      "all_brands_label": {
+        "type": "text",
+        "label": "All Brands Button Label",
+        "value": "All Brands"
+      }
+    },
+    "brands": {
+      "type": "collection",
+      "label": "Brands",
+      "item_schema": {
+        "id": {
+          "type": "text",
+          "label": "ID"
+        },
+        "name": {
+          "type": "text",
+          "label": "Brand Name"
+        },
+        "tagline": {
+          "type": "text",
+          "label": "Tagline"
+        },
+        "desc": {
+          "type": "textarea",
+          "label": "Brand Description"
+        },
+        "logo": {
+          "type": "file",
+          "label": "Brand Logo",
+          "meta": {
+            "accepted_formats": [
+              "png",
+              "jpg",
+              "svg"
+            ],
+            "path": "assets/brands/"
+          }
+        },
+        "hero": {
+          "type": "file",
+          "label": "Brand Hero Image",
+          "meta": {
+            "accepted_formats": [
+              "jpg",
+              "png",
+              "webp"
+            ],
+            "path": "assets/brands/"
+          }
+        },
+        "accent_color": {
+          "type": "color",
+          "label": "Accent Color"
+        }
+      },
+      "value": [
+        {
+          "id": "brand_3uz4v6",
+          "name": "Skyy",
+          "tagline": "Dual Tanks. Skyy Smooth. Flavor Fusion On Demand.",
+          "desc": "Experience the perfect blend of craft cannabis and innovation with Skyy, elevating your vibe to new heights. Our dual-tank pod device delivers unmatched flavor fusion for the discerning enthusiast.",
+          "logo": "assets/brands/brand_3uz4v6_logo_l109t9.png",
+          "hero": "assets/brands/brand_3uz4v6_hero_05bdc4.png",
+          "accent_color": "#00d4ff"
+        },
+        {
+          "id": "brand_4rv6rj",
+          "name": "Fyre",
+          "tagline": "Pocket-Sized. Party-Ready. Fuel The Fyre.",
+          "desc": "Enjoy Fyre Pre-Rolled Cannabis for a smooth, fire experience that ignites your senses and sets the vibe ablaze. Crafted in small batches for maximum potency and consistent burn.",
+          "logo": "assets/brands/brand_4rv6rj_logo_yfs5we.png",
+          "hero": "assets/brands/brand_4rv6rj_hero_fy6llq.png",
+          "accent_color": "#ff8c00"
+        },
+        {
+          "id": "brand_p9hu1g",
+          "name": "Rayne",
+          "tagline": "Rain Or Shine. These Drops Hit Every Time.",
+          "desc": "Unwind with Rayne Drops — our infused gummies with juicy fruit flavors that provide a perfectly mellow experience. Each drop is precisely dosed for consistent, delightful effects you can count on.",
+          "logo": "assets/brands/brand_p9hu1g_logo_7uy04l.png",
+          "hero": "assets/brands/brand_p9hu1g_hero_njveja.png",
+          "accent_color": "#a064f8"
+        },
+        {
+          "id": "brand_a9wz8m",
+          "name": "Foryst",
+          "tagline": "Craft Cannabis. Small Batch. Exceptional Quality.",
+          "desc": "Foryst delivers premium craft cannabis flower in small, carefully curated batches. Each strain is hand-selected for its unique terpene profile, potency, and overall smoking experience.",
+          "logo": "assets/brands/brand_a9wz8m_logo_2mnbg8.png",
+          "hero": "assets/brands/brand_a9wz8m_hero_y81kkg.png",
+          "accent_color": "#e85d1e"
+        }
+      ]
+    },
+    "products": {
+      "type": "collection",
+      "label": "Products",
+      "item_schema": {
+        "id": {
+          "type": "text",
+          "label": "ID"
+        },
+        "name": {
+          "type": "text",
+          "label": "Product Name"
+        },
+        "sub": {
+          "type": "text",
+          "label": "Subtitle"
+        },
+        "desc": {
+          "type": "textarea",
+          "label": "Description"
+        },
+        "tags": {
+          "type": "text",
+          "label": "Tags (comma separated)"
+        },
+        "brand": {
+          "type": "linked",
+          "label": "Brand",
+          "meta": {
+            "collection": "brands",
+            "display_field": "name"
+          }
+        },
+        "thumbnail": {
+          "type": "file",
+          "label": "Product Thumbnail",
+          "meta": {
+            "accepted_formats": [
+              "jpg",
+              "png",
+              "webp"
+            ],
+            "path": "assets/products/"
+          }
+        }
+      },
+      "value": [
+        {
+          "id": "prod_cte2gn",
+          "name": "Dual Tank Pod Device",
+          "sub": "By Realeaf Botanicals",
+          "desc": "The Skyy Dual Tank Pod Device...",
+          "tags": "Device, Dual-Tank, Vape, Rechargeable",
+          "brand": "brand_3uz4v6",
+          "thumbnail": "assets/products/prod_cte2gn_thumbnail_jchafe.jpg"
+        },
+        {
+          "id": "prod_4hi42u",
+          "name": "Skyy Pod — Blue Dream + Wedding Cake",
+          "sub": "Hybrid Blend · 1g Total",
+          "desc": "A harmonious blend...",
+          "tags": "Pod, Hybrid, 1g, Vape",
+          "brand": "brand_3uz4v6",
+          "thumbnail": "assets/products/prod_4hi42u_thumbnail_c4vwfv.jpg"
+        },
+        {
+          "id": "prod_00zoir",
+          "name": "Skyy Pod — Strawberry Cough + Lemon Haze",
+          "sub": "Sativa Blend · 1g Total",
+          "desc": "Wake up your senses...",
+          "tags": "Pod, Sativa, 1g, Vape",
+          "brand": "brand_3uz4v6",
+          "thumbnail": "assets/products/prod_00zoir_thumbnail_07roxh.jpg"
+        },
+        {
+          "id": "prod_prvbb8",
+          "name": "Skyy Pod — Sunset Sherbet + Gelato",
+          "sub": "Indica Blend · 1g Total",
+          "desc": "Unwind with the creamy...",
+          "tags": "Pod, Indica, 1g, Vape",
+          "brand": "brand_3uz4v6",
+          "thumbnail": "assets/products/prod_prvbb8_thumbnail_lg1dgz.jpg"
+        },
+        {
+          "id": "prod_o6r4vq",
+          "name": "Skyy Starter Kit",
+          "sub": "Device + Pod Bundle",
+          "desc": "Everything you need...",
+          "tags": "Bundle, Starter, Device, Pod",
+          "brand": "brand_3uz4v6",
+          "thumbnail": "assets/products/prod_o6r4vq_thumbnail_dhpnj9.jpg"
+        },
+        {
+          "id": "prod_nfqagh",
+          "name": "Fyre Minis — Original Blend",
+          "sub": "8-Pack Pre-Rolls · 0.5g Each",
+          "desc": "The classic Fyre experience...",
+          "tags": "Pre-Roll, Minis, 8-Pack, Hybrid",
+          "brand": "brand_4rv6rj",
+          "thumbnail": "assets/products/prod_nfqagh_thumbnail_nx1yih.jpg"
+        },
+        {
+          "id": "prod_50m4tn",
+          "name": "Fyre Minis — Sativa Blend",
+          "sub": "8-Pack Pre-Rolls · 0.5g Each",
+          "desc": "Light up and level up...",
+          "tags": "Pre-Roll, Minis, 8-Pack, Sativa",
+          "brand": "brand_4rv6rj",
+          "thumbnail": "assets/products/prod_50m4tn_thumbnail_l4o8rx.jpg"
+        },
+        {
+          "id": "prod_rmmigh",
+          "name": "Fyre Minis — Indica Blend",
+          "sub": "8-Pack Pre-Rolls · 0.5g Each",
+          "desc": "Wind down with our indica-dominant...",
+          "tags": "Pre-Roll, Minis, 8-Pack, Indica",
+          "brand": "brand_4rv6rj",
+          "thumbnail": "assets/products/prod_rmmigh_thumbnail_x9a0np.jpg"
+        },
+        {
+          "id": "prod_zqxyvm",
+          "name": "Fyre King Size Pre-Roll",
+          "sub": "Single · 1.5g Premium",
+          "desc": "When minis aren't enough...",
+          "tags": "Pre-Roll, King-Size, Single, Premium",
+          "brand": "brand_4rv6rj",
+          "thumbnail": "assets/products/prod_zqxyvm_thumbnail_uf88nj.jpg"
+        },
+        {
+          "id": "prod_jdeq4r",
+          "name": "Fyre Infused Minis",
+          "sub": "4-Pack Pre-Rolls · Kief-Coated",
+          "desc": "Elevated beyond the ordinary...",
+          "tags": "Pre-Roll, Infused, Kief, 4-Pack",
+          "brand": "brand_4rv6rj",
+          "thumbnail": "assets/products/prod_jdeq4r_thumbnail_064q04.jpg"
+        },
+        {
+          "id": "prod_384kyn",
+          "name": "Sour Power Drops — Variety Pack",
+          "sub": "10-Pack Gummies · 10mg THC Each",
+          "desc": "The ultimate variety experience...",
+          "tags": "Edible, Gummy, 10mg, 10-Pack, Variety",
+          "brand": "brand_p9hu1g",
+          "thumbnail": "assets/products/prod_384kyn_thumbnail_mqup18.jpg"
+        },
+        {
+          "id": "prod_h7agpy",
+          "name": "Rayne Drops — Strawberry",
+          "sub": "10-Pack Gummies · 10mg THC Each",
+          "desc": "Sweet, ripe strawberry flavor...",
+          "tags": "Edible, Gummy, 10mg, 10-Pack, Strawberry",
+          "brand": "brand_p9hu1g",
+          "thumbnail": "assets/products/prod_h7agpy_thumbnail_cav4qp.jpg"
+        },
+        {
+          "id": "prod_fnzyg7",
+          "name": "Rayne Drops — Watermelon",
+          "sub": "10-Pack Gummies · 10mg THC Each",
+          "desc": "Crisp, refreshing watermelon...",
+          "tags": "Edible, Gummy, 10mg, 10-Pack, Watermelon",
+          "brand": "brand_p9hu1g",
+          "thumbnail": "assets/products/prod_fnzyg7_thumbnail_06y3qy.jpg"
+        },
+        {
+          "id": "prod_xziisa",
+          "name": "Rayne Drops — Blue Raspberry",
+          "sub": "10-Pack Gummies · 10mg THC Each",
+          "desc": "Bold, tangy blue raspberry...",
+          "tags": "Edible, Gummy, 10mg, 10-Pack, Blue Raspberry",
+          "brand": "brand_p9hu1g",
+          "thumbnail": "assets/products/prod_xziisa_thumbnail_50jhsl.jpg"
+        },
+        {
+          "id": "prod_6h4j9a",
+          "name": "Rayne 2:1 CBD:THC Drops",
+          "sub": "10-Pack Gummies · Balanced Blend",
+          "desc": "A perfectly balanced blend...",
+          "tags": "Edible, Gummy, CBD, 5mg THC, Wellness",
+          "brand": "brand_p9hu1g",
+          "thumbnail": "assets/products/prod_6h4j9a_thumbnail_hjhxjv.jpg"
+        },
+        {
+          "id": "prod_m1c0ag",
+          "name": "Cara Cara",
+          "sub": "Indica · 3.5g Craft Flower",
+          "desc": "A deeply relaxing indica...",
+          "tags": "Flower, Indica, 3.5g, Craft, Relaxing",
+          "brand": "brand_a9wz8m",
+          "thumbnail": "assets/products/prod_m1c0ag_thumbnail_zca79e.jpg"
+        },
+        {
+          "id": "prod_kxbtdf",
+          "name": "Hella Jelly",
+          "sub": "Hybrid · 3.5g Craft Flower",
+          "desc": "Sweet, fruity, and undeniably dank...",
+          "tags": "Flower, Hybrid, 3.5g, Craft, Fruity",
+          "brand": "brand_a9wz8m",
+          "thumbnail": "assets/products/prod_kxbtdf_thumbnail_0g13qi.jpg"
+        },
+        {
+          "id": "prod_agqlgm",
+          "name": "Jelly Donutz",
+          "sub": "Indica · 3.5g Craft Flower",
+          "desc": "Sweet, doughy, and delightfully relaxing...",
+          "tags": "Flower, Indica, 3.5g, Craft, Sweet",
+          "brand": "brand_a9wz8m",
+          "thumbnail": "assets/products/prod_agqlgm_thumbnail_pmmo3f.jpg"
+        },
+        {
+          "id": "prod_8nmhn6",
+          "name": "Jungle Sunset",
+          "sub": "Sativa · 3.5g Craft Flower",
+          "desc": "A vibrant, energizing sativa...",
+          "tags": "Flower, Sativa, 3.5g, Craft, Energizing",
+          "brand": "brand_a9wz8m",
+          "thumbnail": "assets/products/prod_8nmhn6_thumbnail_ngbakm.jpg"
+        },
+        {
+          "id": "prod_7ko8z2",
+          "name": "Humboldt Dreams",
+          "sub": "Hybrid · 3.5g Craft Flower",
+          "desc": "Inspired by California's legendary...",
+          "tags": "Flower, Hybrid, 3.5g, Craft, Premium",
+          "brand": "brand_a9wz8m",
+          "thumbnail": "assets/products/prod_7ko8z2_thumbnail_jcz0i5.jpg"
+        },
+        {
+          "id": "prod_1syhc2",
+          "name": "Boo Berry Cookies",
+          "sub": "Indica · 3.5g Craft Flower",
+          "desc": "A hauntingly good indica cross...",
+          "tags": "Flower, Indica, 3.5g, Craft, Berry",
+          "brand": "brand_a9wz8m",
+          "thumbnail": "assets/products/prod_1syhc2_thumbnail_98jtsa.jpg"
+        }
+      ]
+    },
+    "product_details": {
+      "type": "collection",
+      "label": "Product Details",
+      "item_schema": {
+        "id": {
+          "type": "text",
+          "label": "ID"
+        },
+        "product": {
+          "type": "linked",
+          "label": "Product",
+          "meta": {
+            "collection": "products",
+            "display_field": "name"
+          }
+        },
+        "label": {
+          "type": "text",
+          "label": "Label"
+        },
+        "value": {
+          "type": "text",
+          "label": "Value"
+        }
+      },
+      "value": [
+        {
+          "id": "detail_srjq77",
+          "product": "prod_cte2gn",
+          "label": "Type",
+          "value": "Vape Device"
+        },
+        {
+          "id": "detail_mj6szb",
+          "product": "prod_cte2gn",
+          "label": "Capacity",
+          "value": "2 × 0.5g"
+        },
+        {
+          "id": "detail_fdncvv",
+          "product": "prod_cte2gn",
+          "label": "Battery",
+          "value": "350mAh"
+        },
+        {
+          "id": "detail_gl11mz",
+          "product": "prod_cte2gn",
+          "label": "Charge",
+          "value": "USB-C"
+        },
+        {
+          "id": "detail_mf0un2",
+          "product": "prod_4hi42u",
+          "label": "Type",
+          "value": "Pod Cartridge"
+        },
+        {
+          "id": "detail_93l2e2",
+          "product": "prod_4hi42u",
+          "label": "Weight",
+          "value": "1g"
+        },
+        {
+          "id": "detail_y1o719",
+          "product": "prod_4hi42u",
+          "label": "THC",
+          "value": "82%"
+        },
+        {
+          "id": "detail_ojezqj",
+          "product": "prod_4hi42u",
+          "label": "Blend",
+          "value": "Hybrid"
+        },
+        {
+          "id": "detail_qzz6kw",
+          "product": "prod_00zoir",
+          "label": "Type",
+          "value": "Pod Cartridge"
+        },
+        {
+          "id": "detail_cide3o",
+          "product": "prod_00zoir",
+          "label": "Weight",
+          "value": "1g"
+        },
+        {
+          "id": "detail_dupwao",
+          "product": "prod_00zoir",
+          "label": "THC",
+          "value": "79%"
+        },
+        {
+          "id": "detail_reod8x",
+          "product": "prod_00zoir",
+          "label": "Blend",
+          "value": "Sativa"
+        },
+        {
+          "id": "detail_ucppkt",
+          "product": "prod_prvbb8",
+          "label": "Type",
+          "value": "Pod Cartridge"
+        },
+        {
+          "id": "detail_fcmtes",
+          "product": "prod_prvbb8",
+          "label": "Weight",
+          "value": "1g"
+        },
+        {
+          "id": "detail_29vcem",
+          "product": "prod_prvbb8",
+          "label": "THC",
+          "value": "85%"
+        },
+        {
+          "id": "detail_v7a5ux",
+          "product": "prod_prvbb8",
+          "label": "Blend",
+          "value": "Indica"
+        },
+        {
+          "id": "detail_lz50ez",
+          "product": "prod_o6r4vq",
+          "label": "Type",
+          "value": "Bundle"
+        },
+        {
+          "id": "detail_ldw73v",
+          "product": "prod_o6r4vq",
+          "label": "Includes",
+          "value": "Device + Pod + Cable"
+        },
+        {
+          "id": "detail_tzljfx",
+          "product": "prod_o6r4vq",
+          "label": "Battery",
+          "value": "350mAh"
+        },
+        {
+          "id": "detail_9jw7ai",
+          "product": "prod_o6r4vq",
+          "label": "Charge",
+          "value": "USB-C"
+        },
+        {
+          "id": "detail_rmnu6f",
+          "product": "prod_nfqagh",
+          "label": "Type",
+          "value": "Pre-Roll"
+        },
+        {
+          "id": "detail_6cfbyi",
+          "product": "prod_nfqagh",
+          "label": "Count",
+          "value": "8 Pack"
+        },
+        {
+          "id": "detail_d4j3g9",
+          "product": "prod_nfqagh",
+          "label": "Weight",
+          "value": "0.5g each"
+        },
+        {
+          "id": "detail_fpkd4m",
+          "product": "prod_nfqagh",
+          "label": "Blend",
+          "value": "Hybrid"
+        },
+        {
+          "id": "detail_mqet2w",
+          "product": "prod_50m4tn",
+          "label": "Type",
+          "value": "Pre-Roll"
+        },
+        {
+          "id": "detail_20fvec",
+          "product": "prod_50m4tn",
+          "label": "Count",
+          "value": "8 Pack"
+        },
+        {
+          "id": "detail_oculio",
+          "product": "prod_50m4tn",
+          "label": "Weight",
+          "value": "0.5g each"
+        },
+        {
+          "id": "detail_j0s1e0",
+          "product": "prod_50m4tn",
+          "label": "Blend",
+          "value": "Sativa"
+        },
+        {
+          "id": "detail_plfvac",
+          "product": "prod_rmmigh",
+          "label": "Type",
+          "value": "Pre-Roll"
+        },
+        {
+          "id": "detail_q4cyb5",
+          "product": "prod_rmmigh",
+          "label": "Count",
+          "value": "8 Pack"
+        },
+        {
+          "id": "detail_ebmeze",
+          "product": "prod_rmmigh",
+          "label": "Weight",
+          "value": "0.5g each"
+        },
+        {
+          "id": "detail_21n9m5",
+          "product": "prod_rmmigh",
+          "label": "Blend",
+          "value": "Indica"
+        },
+        {
+          "id": "detail_8l7ny2",
+          "product": "prod_zqxyvm",
+          "label": "Type",
+          "value": "Pre-Roll"
+        },
+        {
+          "id": "detail_2gx0xr",
+          "product": "prod_zqxyvm",
+          "label": "Size",
+          "value": "King Size"
+        },
+        {
+          "id": "detail_7y0lw8",
+          "product": "prod_zqxyvm",
+          "label": "Weight",
+          "value": "1.5g"
+        },
+        {
+          "id": "detail_8lw1zp",
+          "product": "prod_zqxyvm",
+          "label": "Rolling",
+          "value": "Hand-Rolled"
+        },
+        {
+          "id": "detail_cjfguq",
+          "product": "prod_jdeq4r",
+          "label": "Type",
+          "value": "Infused Pre-Roll"
+        },
+        {
+          "id": "detail_ko0t0d",
+          "product": "prod_jdeq4r",
+          "label": "Count",
+          "value": "4 Pack"
+        },
+        {
+          "id": "detail_0oi56h",
+          "product": "prod_jdeq4r",
+          "label": "Weight",
+          "value": "0.75g each"
+        },
+        {
+          "id": "detail_owoojh",
+          "product": "prod_jdeq4r",
+          "label": "Coating",
+          "value": "Premium Kief"
+        },
+        {
+          "id": "detail_oqmt9t",
+          "product": "prod_384kyn",
+          "label": "Type",
+          "value": "Infused Gummy"
+        },
+        {
+          "id": "detail_icni53",
+          "product": "prod_384kyn",
+          "label": "Count",
+          "value": "10 Pack"
+        },
+        {
+          "id": "detail_cjlsm5",
+          "product": "prod_384kyn",
+          "label": "Dose",
+          "value": "10mg THC each"
+        },
+        {
+          "id": "detail_awlzeo",
+          "product": "prod_384kyn",
+          "label": "Total",
+          "value": "100mg THC"
+        },
+        {
+          "id": "detail_hlyxy9",
+          "product": "prod_h7agpy",
+          "label": "Type",
+          "value": "Infused Gummy"
+        },
+        {
+          "id": "detail_4a2p19",
+          "product": "prod_h7agpy",
+          "label": "Count",
+          "value": "10 Pack"
+        },
+        {
+          "id": "detail_yl5rlq",
+          "product": "prod_h7agpy",
+          "label": "Dose",
+          "value": "10mg THC each"
+        },
+        {
+          "id": "detail_phtshl",
+          "product": "prod_h7agpy",
+          "label": "Flavor",
+          "value": "Strawberry"
+        },
+        {
+          "id": "detail_uz9eqx",
+          "product": "prod_fnzyg7",
+          "label": "Type",
+          "value": "Infused Gummy"
+        },
+        {
+          "id": "detail_jbzew6",
+          "product": "prod_fnzyg7",
+          "label": "Count",
+          "value": "10 Pack"
+        },
+        {
+          "id": "detail_nb5v0l",
+          "product": "prod_fnzyg7",
+          "label": "Dose",
+          "value": "10mg THC each"
+        },
+        {
+          "id": "detail_whfxd6",
+          "product": "prod_fnzyg7",
+          "label": "Flavor",
+          "value": "Watermelon"
+        },
+        {
+          "id": "detail_m9fa66",
+          "product": "prod_xziisa",
+          "label": "Type",
+          "value": "Infused Gummy"
+        },
+        {
+          "id": "detail_fs7lzu",
+          "product": "prod_xziisa",
+          "label": "Count",
+          "value": "10 Pack"
+        },
+        {
+          "id": "detail_86t8at",
+          "product": "prod_xziisa",
+          "label": "Dose",
+          "value": "10mg THC each"
+        },
+        {
+          "id": "detail_dpa0vf",
+          "product": "prod_xziisa",
+          "label": "Flavor",
+          "value": "Blue Raspberry"
+        },
+        {
+          "id": "detail_rb0c03",
+          "product": "prod_6h4j9a",
+          "label": "Type",
+          "value": "Infused Gummy"
+        },
+        {
+          "id": "detail_8c5wq5",
+          "product": "prod_6h4j9a",
+          "label": "Count",
+          "value": "10 Pack"
+        },
+        {
+          "id": "detail_9fgjqr",
+          "product": "prod_6h4j9a",
+          "label": "THC",
+          "value": "5mg each"
+        },
+        {
+          "id": "detail_l9r844",
+          "product": "prod_6h4j9a",
+          "label": "CBD",
+          "value": "10mg each"
+        },
+        {
+          "id": "detail_8kmgwn",
+          "product": "prod_m1c0ag",
+          "label": "Type",
+          "value": "Flower"
+        },
+        {
+          "id": "detail_cxg1r2",
+          "product": "prod_m1c0ag",
+          "label": "Weight",
+          "value": "3.5g"
+        },
+        {
+          "id": "detail_ds06fh",
+          "product": "prod_m1c0ag",
+          "label": "Blend",
+          "value": "Indica"
+        },
+        {
+          "id": "detail_z81rak",
+          "product": "prod_m1c0ag",
+          "label": "THC",
+          "value": "24–27%"
+        },
+        {
+          "id": "detail_3rk1u6",
+          "product": "prod_kxbtdf",
+          "label": "Type",
+          "value": "Flower"
+        },
+        {
+          "id": "detail_lsqkhn",
+          "product": "prod_kxbtdf",
+          "label": "Weight",
+          "value": "3.5g"
+        },
+        {
+          "id": "detail_aqoikz",
+          "product": "prod_kxbtdf",
+          "label": "Blend",
+          "value": "Hybrid"
+        },
+        {
+          "id": "detail_uomk9w",
+          "product": "prod_kxbtdf",
+          "label": "THC",
+          "value": "26–29%"
+        },
+        {
+          "id": "detail_hd7b9e",
+          "product": "prod_agqlgm",
+          "label": "Type",
+          "value": "Flower"
+        },
+        {
+          "id": "detail_wkh80g",
+          "product": "prod_agqlgm",
+          "label": "Weight",
+          "value": "3.5g"
+        },
+        {
+          "id": "detail_ff9t8v",
+          "product": "prod_agqlgm",
+          "label": "Blend",
+          "value": "Indica"
+        },
+        {
+          "id": "detail_z8hph8",
+          "product": "prod_agqlgm",
+          "label": "THC",
+          "value": "25–28%"
+        },
+        {
+          "id": "detail_5l7swe",
+          "product": "prod_8nmhn6",
+          "label": "Type",
+          "value": "Flower"
+        },
+        {
+          "id": "detail_sz39a3",
+          "product": "prod_8nmhn6",
+          "label": "Weight",
+          "value": "3.5g"
+        },
+        {
+          "id": "detail_2foacm",
+          "product": "prod_8nmhn6",
+          "label": "Blend",
+          "value": "Sativa"
+        },
+        {
+          "id": "detail_uwby4p",
+          "product": "prod_8nmhn6",
+          "label": "THC",
+          "value": "22–25%"
+        },
+        {
+          "id": "detail_qfaxtb",
+          "product": "prod_7ko8z2",
+          "label": "Type",
+          "value": "Flower"
+        },
+        {
+          "id": "detail_1xgv8w",
+          "product": "prod_7ko8z2",
+          "label": "Weight",
+          "value": "3.5g"
+        },
+        {
+          "id": "detail_l4rzob",
+          "product": "prod_7ko8z2",
+          "label": "Blend",
+          "value": "Hybrid"
+        },
+        {
+          "id": "detail_fy6zwd",
+          "product": "prod_7ko8z2",
+          "label": "THC",
+          "value": "23–26%"
+        },
+        {
+          "id": "detail_voeb9v",
+          "product": "prod_1syhc2",
+          "label": "Type",
+          "value": "Flower"
+        },
+        {
+          "id": "detail_hwpr43",
+          "product": "prod_1syhc2",
+          "label": "Weight",
+          "value": "3.5g"
+        },
+        {
+          "id": "detail_t9m7yo",
+          "product": "prod_1syhc2",
+          "label": "Blend",
+          "value": "Indica"
+        },
+        {
+          "id": "detail_dcxbdd",
+          "product": "prod_1syhc2",
+          "label": "THC",
+          "value": "27–30%"
+        }
+      ]
+    },
+    "app_settings": {
+      "background_color": {
+        "type": "color",
+        "label": "Background Color",
+        "value": "#080808"
+      },
+      "text_color": {
+        "type": "color",
+        "label": "Text Color",
+        "value": "#ffffff"
+      },
+      "accent_color": {
+        "type": "color",
+        "label": "Accent Color",
+        "value": "#4caf50"
+      }
+    }
+  }
+}
