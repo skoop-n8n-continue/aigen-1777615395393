@@ -756,8 +756,8 @@ function renderProducts(productsWithIndex) {
   const b = activeBrand;
   const bIdx = b.originalIndex;
 
-  grid.innerHTML = productsWithIndex.map(({ p, originalIndex }) => {
-    const pIdx = originalIndex;
+  grid.innerHTML = productsWithIndex.map((p) => {
+    const pIdx = p.originalIndex;
     
     return `
     <div class="prod-card" data-id="${p.id}" data-tags="${p.parsedTags.join(',')}"
